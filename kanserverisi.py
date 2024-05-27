@@ -35,7 +35,7 @@ X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
 # KNN modelini oluşturma
-knn = KNeighborsClassifier(n_neighbors=2)
+knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(X_train, y_train)
 
 # Test seti ile tahmin yapma
